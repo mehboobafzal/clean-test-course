@@ -20,12 +20,12 @@ jobs:
         run: echo Placeholder for Deployment
  
   function_test:
-  runs-on: ubuntu-latest
-  defaults:
-    run:
-      working-directory: frontend
-  steps:
-    - uses: actions/checkout@v4
-    - run: npm install
-    - name: 'Run functional tests'
-    - run: npm test
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm install
+      - name: 'Run functional tests'
+        run: npm test
